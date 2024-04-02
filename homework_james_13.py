@@ -48,7 +48,7 @@ class Event:
     def get_participant_count(self):
         return self.attendance
     
-weekend_event = Event("Scrapbooking Retreat", datetime.datetime(2024, 4, 5), 38)
+weekend_event = Event("Scrapbooking Retreat", datetime.datetime(2024, 4, 5).date(), 38)
 weekend_event.add_participant()
 print(f"{weekend_event.get_participant_count()} people are coming to the {weekend_event.name}!")
 weekend_event.add_participant(3)
